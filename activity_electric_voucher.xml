@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/shsk_bg"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.15"
+        android:orientation="horizontal">
+    <include layout="@layout/activity_head" />
+    
+</LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12.24"
+        android:orientation="horizontal">
+        
+    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.55"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="22.47"
+        android:background="@drawable/bankcard_receiver_white_bg"
+        android:orientation="vertical" >
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.47"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.26"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/congratulate"
+                android:textColor="@color/bankcard_aquire_txt_color"
+                android:textSize="@dimen/pad_large_size" />
+
+            <TextView
+                android:id="@+id/yhksk_accout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textColor="@color/dzqm_accout"
+                android:textSize="@dimen/pad_large_size" />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:layout_marginLeft="5dip"
+                android:textColor="@color/dzqm_accout"
+                android:textSize="@dimen/pad_large_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="@string/pay_success"
+                android:textColor="@color/bankcard_aquire_txt_color"
+                android:textSize="@dimen/pad_large_size" />
+        </LinearLayout>
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"/>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="2dp"
+	    android:orientation="horizontal">
+            
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4.5"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="15.5"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/bankcard_receiver_line" />
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4.5"/>
+	</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.58"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bankcard_pay_ums" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" 
+            android:layout_weight="8.47"
+            android:overScrollMode="never" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_basic_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pad_ll_basic_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+                    <TextView 
+                        android:layout_width="0dp"
+                        android:layout_weight="2.03"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_basic_data_left"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="11.82"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_basic_data_right"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10.64"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+                
+
+            </LinearLayout>
+</ScrollView>
+	
+    </LinearLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.55"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.78"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.3"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.55"
+        android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_singnature"
+            android:layout_width="0dp"
+            android:layout_weight="22.47"
+            android:layout_height="fill_parent"
+            android:background="@drawable/login_btn"
+            android:text="@string/yhksk_qrbdzqm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pad_large_size" />
+        <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.55"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"/>
+
+</LinearLayout>
